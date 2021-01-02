@@ -1,327 +1,336 @@
 <!DOCTYPE html>
 <html>
- <title>W3.CSS</title>
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>W3.CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
- <style>
-     
- .scale-down 
- {
- object-fit: scale-down;
- }
-
- .contain 
- {
- object-fit: contain;
- }
-
- .cover 
- {
- object-fit: cover;
- }
-
- .button 
- {
- position: absolute;
- background-color: #1a1a1a;
- opacity: 0.69;
- border: none;
- color: white;
- padding: 10px 9px;
- text-align: center;
- text-decoration: none;
- display: inline;
- margin: 4px 2px;
- transform: translate(0%, -729%);
- cursor: pointer;
- }
-
- .responsive {
- max-width: 100%;
- height: auto;
- }
-
- #first0 {
- float: right;
- width: 40%;
- height: auto;
- transform: translate(0%, 0%);
- }
-
- #second0 {
- width: 60%;
- float: left;
- height: auto;
- background-color: none;
- transform: translate(0%, 0%);
- color: white;
- }
-
- .container {
- margin: none;
- border: none;
- padding: 0;
- }
-
- .image 
- {
- opacity: 1;
- display: inline-block;
- width: 80%;
- height: auto;
- transform: translate(0%, -10%);
- transition: .5s ease;
- backface-visibility: hidden;
- object-fit: scale-down;
- margin: none;
- padding: 0;
- border: none;
- }
-
- #clear {
- clear: both;
- }
-
- .text {
- color: white;
- font-size: 18px;
- position: absolute;
- top: 50%;
- left: 50%;
- margin-right: -50%;
- transform: translate(0%, 0%)
- }
-
- div.align-left 
- {
- /*margin-left: 70px;*/
- margin-left: 100px;
- margin-top: 0px;
- text-align: left;
- }
-
- </style>
-
- <body>
-     
- <body onload="setImages0()">
-
- <!-- MAIN PORTRAIT IMAGES -->
- <div class='container'>
- <div id="first0">
- <div class="w3-content" style="max-width:1200px;">
- <img id="0-0" class="0mySlides scale-down" src="" style="width:100%;cursor:pointer;height:529px;" onclick="onClick0(this)" class="w3-hover-opacity">
- <img id="0-1" class="0mySlides scale-down" src="" style="width:100%;cursor:pointer;display:none;height:529px" onclick="onClick0(this)" class="w3-hover-opacity">
- <img id="0-2" class="0mySlides scale-down" src="" style="width:100%;cursor:pointer;display:none;height:529px;" onclick="onClick0(this)" class="w3-hover-opacity">
- <img id="0-3" class="0mySlides scale-down" src="" style="width:100%;cursor:pointer;display:none;height:529px;" onclick="onClick0(this)" class="w3-hover-opacity">
- <img id="0-4" class="0mySlides scale-down" src="" style="width:100%;cursor:pointer;display:none;height:529px;" onclick="onClick0(this)" class="w3-hover-opacity">
-
-
- <div class="w3-col-padding w3-section">
-
- <!-- BOTTOM PORTRAIT IMAGES -->
- <div class="w3-col s3" style="transform: translate(0%, -69%)">
- <img id="0-00" class="0demo w3-opacity w3-hover-opacity-off contain" src="" style="width:90%;cursor:pointer" onclick="currentDiv0(1)">
- </div>
-
- <div class="w3-col s2" style="transform: translate(0%, -69%)">
- <img id="0-01" class="0demo w3-opacity w3-hover-opacity-off contain" src="" style="width:90%;cursor:pointer" onclick="currentDiv0(2)">
- </div>
-
- <div class="w3-col s3" style="transform: translate(0%, -69%)">
- <img id="0-02" class="0demo w3-opacity w3-hover-opacity-off contain" src="" style="width:90%;cursor:pointer" onclick="currentDiv0(3)">
- </div>
-
- <div class="w3-col s2" style="transform: translate(0%, -69%)">
- <img id="0-03" class="0demo w3-opacity w3-hover-opacity-off contain" src="" style="width:90%;cursor:pointer" onclick="currentDiv0(4)">
- </div>
-
- <div class="w3-col s2" style="transform: translate(0%, -69%)">
- <img id="0-04" class="0demo w3-opacity w3-hover-opacity-off contain" src="" style="width:90%;cursor:pointer" onclick="currentDiv0(5)">
- </div>
- <!-- END OF PORTRAIT IMAGES -->
-
- <!-- PREVIOUS AND NEXT BUTTONS -->
- <div class="w3-display-container">
- <span class="w3-display-left w3-btn button" onclick="plusDivs0(-1)">❮</span>
- <span class="w3-display-right w3-btn button" onclick="plusDivs0(1)">❯</span>
- </div> <!-- END OF BUTTONS -->
-
- </div> <!-- END OF PADDING -->
- </div> <!-- END OF CONTENT -->
- </div> <!-- END OF FIRST -->
-
- <!-- LEFT TEXTS -->
- <div id="second0" style="transform: translate(-10%, 0%);">
- <div class="align-left" style="margin-top: 69px">
- <h1 id="imageTitle0" class="align-left">HEADSHOT</h1>
- <p id="price0" style="margin-top: 18px">XX - XX USD </p>
- </div>
-
- <div class="align-left" style="margin-top: 42px">
- <p id="imageDescription0-1">With Background</p>
- <p id="imageDescription0-2">+XX USD</p>
- </div>
-
- </div> <!-- END OF TEXTS -->
- <div id="clear"></div>
- </div>
-
- <!-- MODAL -->
- <div id="modal0-01" class="w3-modal" onclick="this.style.display='none'">
- <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-
- <div class="w3-animate-zoom w3-center">
- <img id="img0-01" class="image" style="image">
- </div>
- </div> <!-- END OF MODAL -->
-
- <script>
- var firstDescription0_1 = "WITH BACKGROUND";
- var firstDescription0_2 = "+XX USD";
-
- var secondDescription0_1 = "WITH BACKGROUND";
- var secondDescription0_2 = "+XX USD";
-
- var thirdDescription0_1 = "WITH BACKGROUND";
- var thirdDescription0_2 = "+XX USD";
-
- var fourthDescription0_1 = "";
- var fourthDescription0_2 = "";
-
- var fifthDescription0_1 = "";
- var fifthDescription0_2 = "";
-
- var price0_1 = "69 - 69 USD";
- var price0_2 = "29 - 29 USD";
- var price0_3 = "27 - 27 USD";
- var price0_4 = "+XX USD";
- var price0_5 = "+XX USD";
-
- var imgVar0_0 = "https://i.imgur.com/UmWTYFU.png"
- var imgVar0_1 = "https://i.imgur.com/nyAzhV0.jpg"
- var imgVar0_2 = "https://i.imgur.com/6bX7iCE.png"
- var imgVar0_3 = "https://i.imgur.com/mXuvtW4.png"
- var imgVar0_4 = "https://i.imgur.com/xisFE5t.png"
- var imgVar0_5 = "https://i.imgur.com/0GxJSuT.jpg"
-
- function setImages0() 
- {
- document.getElementById("0-0").src = imgVar0_0;
- document.getElementById("0-1").src = imgVar0_1;
- document.getElementById("0-2").src = imgVar0_2;
- document.getElementById("0-3").src = imgVar0_3;
- document.getElementById("0-4").src = imgVar0_4;
-
- document.getElementById("0-00").src = imgVar0_0;
- document.getElementById("0-01").src = imgVar0_1;
- document.getElementById("0-02").src = imgVar0_2;
- document.getElementById("0-03").src = imgVar0_3;
- document.getElementById("0-04").src = imgVar0_4;
- }
-
- function currentDiv0(n) 
- {
-    showDivs0(slideIndex0 = n);
- }
-
- function showDivs0(n) 
- {
-    var i;
-    var x = document.getElementsByClassName("0mySlides");
-    var dots = document.getElementsByClassName("0demo");
-
-    if (n > x.length) 
-    {
-        slideIndex0 = 1
-    }
-    if (n < 1) 
-    {
-        slideIndex0 = x.length
-    }
-    for (i = 0; i < x.length; i++) 
-    {
-        x[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) 
-    {
-        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  <style>
+    .scale-down {
+      object-fit: scale-down;
     }
 
-    x[slideIndex0 - 1].style.display = "block";
-    dots[slideIndex0 - 1].className += " w3-opacity-off";
- }
+    .contain {
+      object-fit: contain;
+    }
 
- function onClick0(element) 
- {
- document.getElementById("img0-01").src = element.src;
+    .cover {
+      object-fit: cover;
+    }
 
- document.getElementById("modal0-01").style.display = "block";
- }
+    .button {
+      position: absolute;
+      background-color: #1a1a1a;
+      opacity: 0.69;
+      border: none;
+      color: white;
+      padding: 10px 9px;
+      text-align: center;
+      text-decoration: none;
+      display: inline;
+      margin: 4px 2px;
+      transform: translate(0%, -729%);
+      cursor: pointer;
+    }
 
- var slideIndex0 = 1;
- showDivs0(slideIndex0);
+    .responsive {
+      max-width: 100%;
+      height: auto;
+    }
 
- function plusDivs0(n) {
+    #first0 {
+      float: right;
+      width: 40%;
+      height: auto;
+      transform: translate(0%, 0%);
+    }
 
-    showDivs0(slideIndex0 += n);
- }
+    #second0 {
+      width: 60%;
+      float: left;
+      height: auto;
+      background-color: none;
+      transform: translate(0%, 0%);
+      color: white;
+    }
 
- function showDivs0(n) 
- {
- var i;
- var x = document.getElementsByClassName("0mySlides");
- var dots = document.getElementsByClassName("0demo");
- if (n > x.length) {
- slideIndex0 = 1
- }
- if (n < 1) {
- slideIndex0 = x.length
- }
- for (i = 0; i < x.length; i++) {
- x[i].style.display = "none";
- }
- for (i = 0; i < dots.length; i++) {
- dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
- }
- x[slideIndex0 - 1].style.display = "block";
- dots[slideIndex0 - 1].className += " w3-opacity-off";
+    .container {
+      margin: none;
+      border: none;
+      padding: 0;
+    }
 
- console.log("0_divs " + n);
- console.log("0_slideIndex0 " + slideIndex0);
+    .image {
+      opacity: 1;
+      display: inline-block;
+      width: 80%;
+      height: auto;
+      transform: translate(0%, -10%);
+      transition: 0.5s ease;
+      backface-visibility: hidden;
+      object-fit: scale-down;
+      margin: none;
+      padding: 0;
+      border: none;
+    }
 
- if (slideIndex0 == 1) 
- {
- document.getElementById("imageTitle0").innerHTML = "HEADSHOT11";
- document.getElementById("price0").innerHTML = price0_1;
- document.getElementById("imageDescription0-1").innerHTML = firstDescription0_1;
- document.getElementById("imageDescription0-2").innerHTML = firstDescription0_2;
- } else if (slideIndex0 == 2) {
- document.getElementById("imageTitle0").innerHTML = "HEADSHOT";
- document.getElementById("price0").innerHTML = price0_2;
- document.getElementById("imageDescription0-1").innerHTML = secondDescription0_1;
- document.getElementById("imageDescription0-2").innerHTML = secondDescription0_2;
- } else if (slideIndex0 == 3) {
- document.getElementById("imageTitle0").innerHTML = "ARMS/HANDS INCLUDED";
- document.getElementById("price0").innerHTML = price0_3;
- document.getElementById("imageDescription0-1").innerHTML = thirdDescription0_1;
- document.getElementById("imageDescription0-2").innerHTML = thirdDescription0_2;
- } else if (slideIndex0 == 4) {
- document.getElementById("imageTitle0").innerHTML = "WITH BACKGROUND";
- document.getElementById("price0").innerHTML = price0_4;
- document.getElementById("imageDescription0-1").innerHTML = fourthDescription0_1;
- document.getElementById("imageDescription0-2").innerHTML = fourthDescription0_2;
- } else if (slideIndex0 == 5) {
- document.getElementById("imageTitle0").innerHTML = "WITH SIDE CHARACTER";
- document.getElementById("price0").innerHTML = price0_5;
- document.getElementById("imageDescription0-1").innerHTML = fifthDescription0_1;
- document.getElementById("imageDescription0-2").innerHTML = fifthDescription0_2;
- }
- }
+    #clear {
+      clear: both;
+    }
 
- </script>
+    .text {
+      color: white;
+      font-size: 18px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(0%, 0%);
+    }
 
- </body>
+    div.align-left {
+      /*margin-left: 70px;*/
+      margin-left: 100px;
+      margin-top: 0px;
+      text-align: left;
+    }
+  </style>
 
+  <body>
+    <body onload="setImages0()">
+      <!-- MAIN PORTRAIT IMAGES -->
+      <div class="container">
+        <div id="first0">
+          <div class="w3-content" style="max-width: 1200px">
+            <img
+              id="0-0"
+              class="0mySlides scale-down w3-hover-opacity"
+              src=""
+              style="width: 100%; cursor: pointer; height: 529px"
+              onclick="onClick0(this)"
+            />
+            <img
+              id="0-1"
+              class="0mySlides scale-down w3-hover-opacity"
+              src=""
+              style="width: 100%; cursor: pointer; display: none; height: 529px"
+              onclick="onClick0(this)"
+            />
+            <img
+              id="0-2"
+              class="0mySlides scale-down w3-hover-opacity"
+              src=""
+              style="width: 100%; cursor: pointer; display: none; height: 529px"
+              onclick="onClick0(this)"
+            />
+
+            <div class="w3-col-padding w3-section">
+              <!-- BOTTOM PORTRAIT IMAGES -->
+              <div class="w3-col s3" style="transform: translate(70%, -42%)">
+                <img
+                  id="0-00"
+                  class="0demo w3-opacity w3-hover-opacity-off contain"
+                  src=""
+                  style="width: 90%; cursor: pointer"
+                  onclick="currentDiv0(1)"
+                />
+              </div>
+
+              <div class="w3-col s3" style="transform: translate(70%, -42%)">
+                <img
+                  id="0-01"
+                  class="0demo w3-opacity w3-hover-opacity-off contain"
+                  src=""
+                  style="width: 90%; cursor: pointer"
+                  onclick="currentDiv0(2)"
+                />
+              </div>
+
+              <div class="w3-col s2" style="transform: translate(100%, -42%)">
+                <img
+                  id="0-02"
+                  class="0demo w3-opacity w3-hover-opacity-off contain"
+                  src=""
+                  style="width: 90%; cursor: pointer"
+                  onclick="currentDiv0(3)"
+                />
+              </div>
+
+              <!-- END OF PORTRAIT IMAGES -->
+
+              <!-- PREVIOUS AND NEXT BUTTONS -->
+              <div class="w3-display-container">
+                <span
+                  class="w3-display-left w3-btn button"
+                  onclick="plusDivs0(-1)"
+                  >❮</span
+                >
+                <span
+                  class="w3-display-right w3-btn button"
+                  onclick="plusDivs0(1)"
+                  >❯</span
+                >
+              </div>
+              <!-- END OF BUTTONS -->
+            </div>
+            <!-- END OF PADDING -->
+          </div>
+          <!-- END OF CONTENT -->
+        </div>
+        <!-- END OF FIRST -->
+
+        <!-- LEFT TEXTS -->
+        <div id="second0" style="transform: translate(-10%, 0%)">
+          <div class="align-left" style="margin-top: 69px">
+            <h1 id="imageTitle0" class="align-left">HEADSHOT</h1>
+            <p id="price0" style="margin-top: 18px">XX - XX USD</p>
+          </div>
+
+          <div class="align-left" style="margin-top: 42px">
+            <p id="imageDescription0-1">With Background</p>
+            <p id="imageDescription0-2">+XX USD</p>
+          </div>
+        </div>
+        <!-- END OF TEXTS -->
+        <div id="clear"></div>
+      </div>
+
+      <!-- MODAL -->
+      <div id="modal0-01" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright"
+          >&times;</span
+        >
+
+        <div class="w3-animate-zoom w3-center">
+          <img id="img0-01" class="image" style="image" />
+        </div>
+      </div>
+      <!-- END OF MODAL -->
+
+      <script>
+        var firstDescription0_1 = "+10 to 20 USD for complexity";
+        var firstDescription0_2 = "";
+
+        var secondDescription0_1 = "+10 to 40 USD for complexity";
+        var secondDescription0_2 = "";
+
+        var thirdDescription0_1 = "+10 to 40 USD for complexity";
+        var thirdDescription0_2 = "+20 USD for background";
+
+        var price0_1 = "30 USD";
+        var price0_2 = "40 USD";
+        var price0_3 = "50 USD";
+
+        var imgVar0_0 = "https://i.imgur.com/6TVfWLX.png";
+        var imgVar0_1 = "https://i.imgur.com/bxw7aFA.png";
+        var imgVar0_2 = "https://i.imgur.com/DZ7dpdp.png";
+
+        function setImages0() {
+          document.getElementById("0-0").src = imgVar0_0;
+          document.getElementById("0-1").src = imgVar0_1;
+          document.getElementById("0-2").src = imgVar0_2;
+
+          document.getElementById("0-00").src = imgVar0_0;
+          document.getElementById("0-01").src = imgVar0_1;
+          document.getElementById("0-02").src = imgVar0_2;
+        }
+
+        function currentDiv0(n) {
+          showDivs0((slideIndex0 = n));
+        }
+
+        function showDivs0(n) {
+          var i;
+          var x = document.getElementsByClassName("0mySlides");
+          var dots = document.getElementsByClassName("0demo");
+
+          if (n > x.length) {
+            slideIndex0 = 1;
+          }
+          if (n < 1) {
+            slideIndex0 = x.length;
+          }
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(
+              " w3-opacity-off",
+              ""
+            );
+          }
+
+          x[slideIndex0 - 1].style.display = "block";
+          dots[slideIndex0 - 1].className += " w3-opacity-off";
+        }
+
+        function onClick0(element) {
+          document.getElementById("img0-01").src = element.src;
+
+          document.getElementById("modal0-01").style.display = "block";
+        }
+
+        var slideIndex0 = 1;
+        showDivs0(slideIndex0);
+
+        function plusDivs0(n) {
+          showDivs0((slideIndex0 += n));
+        }
+
+        function showDivs0(n) {
+          var i;
+          var x = document.getElementsByClassName("0mySlides");
+          var dots = document.getElementsByClassName("0demo");
+          if (n > x.length) {
+            slideIndex0 = 1;
+          }
+          if (n < 1) {
+            slideIndex0 = x.length;
+          }
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(
+              " w3-opacity-off",
+              ""
+            );
+          }
+          x[slideIndex0 - 1].style.display = "block";
+          dots[slideIndex0 - 1].className += " w3-opacity-off";
+
+          console.log("divs " + n);
+          console.log("slideIndex0 " + slideIndex0);
+
+          if (slideIndex0 == 1) {
+            document.getElementById("imageTitle0").innerHTML = "HEADSHOT";
+            document.getElementById("price0").innerHTML = price0_1;
+            document.getElementById(
+              "imageDescription0-1"
+            ).innerHTML = firstDescription0_1;
+            document.getElementById(
+              "imageDescription0-2"
+            ).innerHTML = firstDescription0_2;
+          } else if (slideIndex0 == 2) {
+            document.getElementById("imageTitle0").innerHTML = "HALF BODY";
+            document.getElementById("price0").innerHTML = price0_2;
+            document.getElementById(
+              "imageDescription0-1"
+            ).innerHTML = secondDescription0_1;
+            document.getElementById(
+              "imageDescription0-2"
+            ).innerHTML = secondDescription0_2;
+          } else if (slideIndex0 == 3) {
+            document.getElementById("imageTitle0").innerHTML = "FULL BODY";
+            document.getElementById("price0").innerHTML = price0_3;
+            document.getElementById(
+              "imageDescription0-1"
+            ).innerHTML = thirdDescription0_1;
+            document.getElementById(
+              "imageDescription0-2"
+            ).innerHTML = thirdDescription0_2;
+          }
+        }
+      </script>
+    </body>
+  </body>
 </html>
