@@ -127,7 +127,7 @@
 
           <div class="w3-col-padding w3-section">
             <!-- BOTTOM PORTRAIT IMAGES -->
-            <div class="w3-col s3" style="transform: translate(70%, -11%)">
+            <div class="w3-col s3" style="transform: translate(30%, -9%)">
               <img
                 id="0-00"
                 class="0demo w3-opacity w3-hover-opacity-off contain"
@@ -137,7 +137,7 @@
               />
             </div>
 
-            <div class="w3-col s3" style="transform: translate(70%, -11%)">
+            <div class="w3-col s3" style="transform: translate(30%, -9%)">
               <img
                 id="0-01"
                 class="0demo w3-opacity w3-hover-opacity-off contain"
@@ -147,7 +147,7 @@
               />
             </div>
 
-            <div class="w3-col s2" style="transform: translate(100%, -11%)">
+            <div class="w3-col s2" style="transform: translate(60%, -9%)">
               <img
                 id="0-02"
                 class="0demo w3-opacity w3-hover-opacity-off contain"
@@ -169,6 +169,7 @@
               <span
                 class="w3-display-right w3-btn button"
                 onclick="plusDivs0(1)"
+                style="transform: translate(-420%, -740%)"
                 >❯</span
               >
             </div>
@@ -271,6 +272,8 @@
         document.getElementById("img0-01").src = element.src;
 
         document.getElementById("modal0-01").style.display = "block";
+
+        if (element.id == "0-2") console.log("hehe");
       }
 
       var slideIndex0 = 1;
