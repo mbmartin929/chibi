@@ -285,10 +285,12 @@
         if (element.id == "0-2") {
           console.log("hehe");
           document.getElementById("img0-01").style.transform =
-            "translateY(18px)";
-          //document.getElementById("0-2").style.height = "90vh";
-          //document.getElementById("0-2").style.height = 95vh;
+            "translateY(-18%)";
+          document.getElementById("img0-01").style.maxWidth = "100%";
+        } else if (element.id == "0-1") {
+          document.getElementById("img0-01").style.maxWidth = "100%";
         } else {
+          document.getElementById("img0-01").style.maxWidth = "100%";
           document.getElementById("img0-01").style.transform =
             "translateY(-13%)";
         }
