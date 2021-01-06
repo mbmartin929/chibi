@@ -93,13 +93,22 @@
       margin-top: 0px;
       text-align: left;
     }
+
+    body {
+      overflow: hidden;
+    }
   </style>
 
   <body onload="setImages0()" style="overflow: hidden">
     <!-- MAIN PORTRAIT IMAGES -->
     <div
       class="container"
-      style="position: absolute; top: 90px; overflow: hidden"
+      style="
+        position: absolute;
+        top: 90px;
+        overflow: hidden;
+        transform: translate(0px, 100px);
+      "
     >
       <div id="first0">
         <div class="w3-content" style="max-width: 1200px">
@@ -273,7 +282,10 @@
 
         document.getElementById("modal0-01").style.display = "block";
 
-        if (element.id == "0-2") console.log("hehe");
+        if (element.id == "0-2") {
+          console.log("hehe");
+          //document.getElementById("0-2").style.maxHeight =
+        }
       }
 
       var slideIndex0 = 1;
