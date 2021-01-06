@@ -282,17 +282,24 @@
 
         document.getElementById("modal0-01").style.display = "block";
 
-        if (element.id == "0-2") {
+        if (element.id == "0-2") 
+        {
           console.log("hehe");
-          document.getElementById("img0-01").style.transform =
-            "translateY(-18%)";
+          document.getElementById("img0-01").style.transform = "translateY(-10%)";
+          document.getElementById("img0-01").style.maxHeight = "90vh";
           document.getElementById("img0-01").style.maxWidth = "100%";
-        } else if (element.id == "0-1") {
-          document.getElementById("img0-01").style.maxWidth = "100%";
-        } else {
-          document.getElementById("img0-01").style.maxWidth = "100%";
-          document.getElementById("img0-01").style.transform =
-            "translateY(-13%)";
+        }
+        else if (element.id == "0-1") 
+        {
+        	document.getElementById("img0-01").style.maxWidth = "100%";
+          document.getElementById("img0-01").style.maxHeight = "80vh";
+          document.getElementById("img0-01").style.transform = "translateY(-15%)";
+        }
+        else 
+        {
+        	document.getElementById("img0-01").style.maxWidth = "100%";
+          document.getElementById("img0-01").style.maxHeight = "100vh";
+        	document.getElementById("img0-01").style.transform = "translateY(-13%)";
         }
       }
 
